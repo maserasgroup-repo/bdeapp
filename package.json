@@ -3,6 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^3.2.0",
+    "@material-ui/icons": "^3.0.1",
+    "algebra.js": "^0.2.6",
+    "fg-loadcss": "^2.0.1",
+    "mathjs": "^5.2.1",
+    "prettier": "^1.14.3",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-scripts": "2.0.4"
