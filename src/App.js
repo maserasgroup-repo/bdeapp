@@ -104,24 +104,122 @@ class App extends React.Component {
         ligand: {
           header: [
             "Your ligand(s)",
-            "Reference A",
-            "Reference B",
-            "Reference C",
-            "Reference D",
-            "Reference E"
+            ["FeCl", <sub>2</sub>, <sup>+</sup>],
+            ["MnO", <sub>3</sub>, <sup>+</sup>],
+            ["W(CO)", <sub>5</sub>],
+            ["ZrCl", <sub>5</sub>, <sup>-</sup>],
+            ["HgI", <sub>2</sub>]
           ],
-          weights: []
+          weights: [
+            [
+              // FeCl
+              -9.57e-5,
+              -0.0007779798,
+              0.008334381,
+              0.0012725377,
+              0.0104595956
+            ],
+            [
+              // MnO
+              -0.0014347238,
+              -0.001264999,
+              -0.0014086146,
+              -0.0112683125,
+              -0.0106811005
+            ],
+            [
+              // WCO
+              -0.0006641604,
+              0.0120263372,
+              -0.0045691142,
+              0.0143800929,
+              0.0102959932
+            ],
+            [
+              // ZrCl
+              -0.0004656456,
+              -0.0082425979,
+              -0.0085413411,
+              0.0123642104,
+              0.0060195296
+            ],
+            [
+              // HgI
+              -0.0001578893,
+              0.001264534,
+              0.0026525622,
+              0.0062846997,
+              -0.0134778904
+            ],
+            [
+              // independent term
+              -0.0062596039,
+              0.0050016996,
+              0.0451941129,
+              -0.0058735631,
+              -0.2316419222
+            ]
+          ]
         },
         metal: {
           header: [
             "Your metallic cofactor(s)",
-            "Reference A",
-            "Reference B",
-            "Reference C",
-            "Reference D",
-            "Reference E"
+            ["Cl", <sup>-</sup>],
+            "CO",
+            ["C", <sub>6</sub>, "H", <sub>5</sub>, <sup>-</sup>],
+            ["O", <sup>2-</sup>],
+            ["C", <sub>6</sub>, "H", <sub>4</sub>, "OMe", <sup>-</sup>]
           ],
-          weights: []
+          weights: [
+            [
+              // Cl
+              0.0006687317,
+              0.0011095867,
+              0.0088471175,
+              0.0189701685,
+              -0.020378295
+            ],
+            [
+              // CO
+              0.0001874184,
+              -0.0048469364,
+              0.0060299296,
+              -0.0007216421,
+              -0.0085463645
+            ],
+            [
+              // C6H5-
+              0.0009591169,
+              -0.0048027196,
+              0.003030465,
+              -0.0026819672,
+              0.0211107271
+            ],
+            [
+              // O2-
+              0.0003267515,
+              0.0044468402,
+              0.0023381813,
+              -0.0016501179,
+              -0.0010446671
+            ],
+            [
+              // C6H4OMe−
+              0.0004390254,
+              -0.0014948412,
+              -0.0115530296,
+              -0.0010916596,
+              -0.0071786809
+            ],
+            [
+              // independent term
+              0.0014124172,
+              -0.0408005953,
+              -0.1393570241,
+              0.1834110805,
+              0.256521314
+            ]
+          ]
         }
       },
       vacuum: {
@@ -408,7 +506,9 @@ class App extends React.Component {
         let errorState = j
           ? !this.validateQuantity(rows[i][j])
           : !this.validateName(rows[i][j]);
-        let tooltip = j ? "Bond dissociation energy (in Ha)" : "Compound name";
+        let tooltip = j
+          ? "Bond dissociation energy (in kcal/mol)"
+          : "Compound name";
         tableCells.push(
           <TableCell key={j + 1}>
             <Tooltip title={tooltip}>
@@ -432,8 +532,7 @@ class App extends React.Component {
       const energies = this.state.rows[row].slice(1);
       const medium = this.state.medium;
       const compoundType = this.state.compoundType;
-      const references = header.slice(1);
-      const weights = this.media[medium][this.state.compoundType].weights;
+      const weights = this.media[medium][compoundType].weights;
       const descriptors = computeDescriptors(energies, weights);
       resultCards.push(
         <Grid item xs={3} key={i}>
@@ -442,7 +541,6 @@ class App extends React.Component {
             name={name}
             medium={medium}
             compoundType={compoundType}
-            references={references}
             descriptors={descriptors}
             style={null}
           />
@@ -464,6 +562,11 @@ class App extends React.Component {
             <Typography variant="h4" color="inherit" className={classes.grow}>
               BDE Matrix App
             </Typography>
+            {this.state.medium === "water" ? (
+              <Button color="secondary" disabled>
+                Provisional data
+              </Button>
+            ) : null}
             <ConditionsMenu
               items={["Ligand", "Metal"]}
               labelName={"Compound Type"}
@@ -501,23 +604,15 @@ class App extends React.Component {
 }
 
 function ResultCard(props) {
-  const {
-    classes,
-    name,
-    references,
-    descriptors,
-    medium,
-    compoundType
-  } = props;
+  const { classes, name, descriptors, medium, compoundType } = props;
   let compoundTypeTitle =
     compoundType.charAt(0).toUpperCase() + compoundType.slice(1);
   let lis = [];
   for (let i = 0; i < descriptors.length; i++) {
     const descriptor = <code>{descriptors[i]}</code>;
-    const reference = references[i];
     lis.push(
       <ListItem key={i} disableGutters>
-        <ListItemText primary={descriptor} secondary={reference} />
+        <ListItemText primary={descriptor} />
       </ListItem>
     );
   }
