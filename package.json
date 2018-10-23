@@ -1,6 +1,7 @@
 {
   "name": "bde",
   "version": "0.1.0",
+  "homepage": "https://jaimergp.github.io/bdeapp",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^3.2.0",
