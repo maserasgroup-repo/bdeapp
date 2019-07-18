@@ -4,14 +4,14 @@
   "homepage": "https://jaimergp.github.io/bdeapp",
   "private": true,
   "dependencies": {
-    "@material-ui/core": "^3.2.0",
-    "@material-ui/icons": "^3.0.1",
+    "@material-ui/core": "^3.9.3",
+    "@material-ui/icons": "^3.0.2",
     "algebra.js": "^0.2.6",
-    "fg-loadcss": "^2.0.1",
-    "mathjs": "^5.2.1",
-    "prettier": "^1.14.3",
-    "react": "^16.5.2",
-    "react-dom": "^16.5.2",
+    "fg-loadcss": "^2.1.0",
+    "mathjs": "^5.10.3",
+    "prettier": "^1.18.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
     "react-scripts": "2.0.4"
   },
   "scripts": {

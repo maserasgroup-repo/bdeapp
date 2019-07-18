@@ -734,7 +734,7 @@ function Footer(props) {
         </span>
         <SeparatorDot className={props.classes.separator} />
         <a
-          href="https://github.com/jaimergp/bde"
+          href="https://pubs.acs.org/doi/abs/10.1021/acs.inorgchem.8b02372"
           target="_blank"
           rel="noopener noreferrer"
           className={props.classes.link}
@@ -770,50 +770,7 @@ function InfoDialog(props) {
       </DialogTitle>
       <DialogContent>
         <DialogContentText>
-          Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-          dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-          consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel
-          scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue
-          laoreet rutrum faucibus dolor auctor. Aenean lacinia bibendum nulla
-          sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl
-          consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus
-          auctor fringilla. Cras mattis consectetur purus sit amet fermentum.
-          Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo
-          risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo
-          cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis
-          lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean lacinia
-          bibendum nulla sed consectetur. Praesent commodo cursus magna, vel
-          scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper
-          nulla non metus auctor fringilla. Cras mattis consectetur purus sit
-          amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget
-          quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-          Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
-          Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
-          Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus
-          magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec
-          ullamcorper nulla non metus auctor fringilla. Cras mattis consectetur
-          purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in,
-          egestas eget quam. Morbi leo risus, porta ac consectetur ac,
-          vestibulum at eros. Praesent commodo cursus magna, vel scelerisque
-          nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum
-          faucibus dolor auctor. Aenean lacinia bibendum nulla sed consectetur.
-          Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
-          Donec sed odio dui. Donec ullamcorper nulla non metus auctor
-          fringilla. Cras mattis consectetur purus sit amet fermentum. Cras
-          justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo
-          risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo
-          cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis
-          lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean lacinia
-          bibendum nulla sed consectetur. Praesent commodo cursus magna, vel
-          scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper
-          nulla non metus auctor fringilla. Cras mattis consectetur purus sit
-          amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget
-          quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-          Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
-          Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
-          Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus
-          magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec
-          ullamcorper nulla non metus auctor fringilla.
+          A statistical treatment of the DFT-computed heterolytic bond dissociation energies (BDE) between a diverse variety of metal fragments and ligands leads to the identification of five hidden descriptors that best characterize the bonding ability per moiety, and of a simple mathematical formula able to obtain from these hidden descriptors a BDE estimation within a few kcal/mol from the DFT value. A simple extension of this treatment beyond the original set of metal fragments and ligands is also presented. The first two hidden descriptors can be associated with the well-known concepts of σ-donation and π-effects, with the next two associated with cis influence and degree of covalency. The procedure can be easily extended to additional ligands and metal fragments, and it opens the way to an improved understanding of fundamental concepts of chemical bonding. <a href="https://pubs.acs.org/doi/full/10.1021/acs.inorgchem.8b02372" target="_blank">Read the article</a>.
         </DialogContentText>
       </DialogContent>
       <DialogActions>
