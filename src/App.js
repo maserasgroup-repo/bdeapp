@@ -105,7 +105,7 @@ class App extends React.Component {
           header: [
             "Your ligand(s)",
             ["OsO", <sub>3</sub>, <sup>2+</sup>],
-            ["PdH(PH", <sub>3</sub>, ")", <sup>2</sup>],
+            ["PdH(PH", <sub>3</sub>, ")", <sub>2</sub>, <sup>+</sup>],
             ["PdPH", <sub>3</sub>],
             ["ZrCl", <sub>5</sub>, <sup>-</sup>],
             ["InCl", <sub>2</sub>, <sup>+</sup>]
@@ -231,7 +231,7 @@ class App extends React.Component {
             ["OsO", <sub>3</sub>, <sup>2+</sup>],
             ["PtF", <sub>5</sub>, <sup>-</sup>],
             ["Ru(SH)", <sub>4</sub>],
-            ["TiCl", <sub>3</sub>]
+            ["TiCl", <sub>3</sub>, <sup>+</sup>]
           ],
           // obtained from ESI table S24
           weights: [
