@@ -562,11 +562,6 @@ class App extends React.Component {
             <Typography variant="h4" color="inherit" className={classes.grow}>
               BDE Matrix App
             </Typography>
-            {this.state.medium === "water" ? (
-              <Button color="secondary" disabled>
-                Provisional data
-              </Button>
-            ) : null}
             <ConditionsMenu
               items={["Ligand", "Metal"]}
               labelName={"Compound Type"}
