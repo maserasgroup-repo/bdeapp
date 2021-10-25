@@ -1,0 +1,25 @@
+# The following lines correspond to the basic deployment of the bdeapp in a clean 
+# environment in ubuntu. 
+
+1) Download node.js 
+2) ensure its binaries are accesible
+    a) extract the folder
+    b) add the folder/bin to your PATH variable
+3) clone the repository in a folder 
+    $ mkdir bdeapp
+    $ git clone git@github.com:maserasgroup-repo/bdeapp.git bdeapp/
+    $ cd bdeapp
+4) install the dependencies
+    $ npm install
+5a) run a development version to check the changes locally
+    $ npm start
+5b) build the app (After finishing with the changes) 
+    $ npm run build
+6) deploy the web 
+    # Commit the source code
+    $ git add . 
+    $ git commit -m "message" 
+    $ git push origin master
+    # deploy in gh-pages
+    $ npm run deploy
+7) Done
