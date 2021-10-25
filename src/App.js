@@ -744,6 +744,16 @@ function Footer(props) {
         </a>
         <SeparatorDot className={props.classes.separator} />
         <a
+          href="https://github.com/maserasgroup-repo"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={props.classes.link}
+        >
+          <Icon className={classNames(props.classes.icon, "fab fa-github")} />
+          @maserasgroup-repo
+        </a>
+        <SeparatorDot className={props.classes.separator} />
+        <a
           href="https://github.com/jaimergp"
           target="_blank"
           rel="noopener noreferrer"
