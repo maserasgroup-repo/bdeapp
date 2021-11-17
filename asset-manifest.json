@@ -1,13 +1,13 @@
 {
-  "main.css": "/bdeapp/static/css/main.39c497ab.chunk.css",
-  "main.js": "/bdeapp/static/js/main.7a12e419.chunk.js",
-  "main.js.map": "/bdeapp/static/js/main.7a12e419.chunk.js.map",
-  "static/js/1.42553293.chunk.js": "/bdeapp/static/js/1.42553293.chunk.js",
-  "static/js/1.42553293.chunk.js.map": "/bdeapp/static/js/1.42553293.chunk.js.map",
+  "main.css": "/bdeapp/static/css/main.1efef270.chunk.css",
+  "main.js": "/bdeapp/static/js/main.730bf23c.chunk.js",
+  "main.js.map": "/bdeapp/static/js/main.730bf23c.chunk.js.map",
+  "static/js/1.3c3e0fb5.chunk.js": "/bdeapp/static/js/1.3c3e0fb5.chunk.js",
+  "static/js/1.3c3e0fb5.chunk.js.map": "/bdeapp/static/js/1.3c3e0fb5.chunk.js.map",
   "runtime~main.js": "/bdeapp/static/js/runtime~main.54aa942e.js",
   "runtime~main.js.map": "/bdeapp/static/js/runtime~main.54aa942e.js.map",
-  "static/css/main.39c497ab.chunk.css.map": "/bdeapp/static/css/main.39c497ab.chunk.css.map",
+  "static/css/main.1efef270.chunk.css.map": "/bdeapp/static/css/main.1efef270.chunk.css.map",
   "index.html": "/bdeapp/index.html",
-  "precache-manifest.4155813d19486f42208ce5b33ee0e40f.js": "/bdeapp/precache-manifest.4155813d19486f42208ce5b33ee0e40f.js",
+  "precache-manifest.dde8c30fd22d0bf902060a604bc0651c.js": "/bdeapp/precache-manifest.dde8c30fd22d0bf902060a604bc0651c.js",
   "service-worker.js": "/bdeapp/service-worker.js"
 }
