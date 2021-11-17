@@ -720,6 +720,47 @@ function Footer(props) {
       id="footer"
       className={classNames(props.classes.center, props.classes.footer)}
     >
+      <Typography variant="caption" align="left" display="block" gutterBottom>
+        Computational Details:
+        <ul>
+          <li>
+            Electronic structure calculations: Gaussian 09.
+          </li>
+          <li>
+            Medium vacuum: Optimizations in gas phase with B3LYP-D3/6-31+G(d) 
+            for H-Cl elements, and B3LYP-D3/SDD together with Stuttgart/Dresden 
+            ECP for heavier atoms. All energies in kcal·mol<sup>-1</sup>, 
+            corresponding to potential energies in gas phase plus zero-point 
+            energy corrections.
+          </li>
+          <li>
+            Medium water: Single-point calculations on the B3LYP-D3 optimized 
+            structures in vacuum were computed in water using PCM with the same 
+            basis sets. All energies in kcal·mol<sup>-1</sup>, corresponding to 
+            potential energies in water phase plus zero-point energy corrections 
+            from the vacuum calculations.
+          </li>
+        </ul>
+      </Typography>
+      <Typography variant="caption" align="left" display="block" gutterBottom>
+        Reference Articles:
+        <ul>
+          <li>
+            L. Morán-González, J. Rodríguez-Guerra Pedregal, M. Besora, F. Maseras, Eur. J. Inorg. Chem., provisionally accepted. DOI: 10.1002/ejic.202100932
+          </li>
+          <li>
+            O. Lakuntza, M. Besora, F. Maseras, Inorg. Chem., 2018, 57, 14660-14670. DOI:  
+            <a
+              href="https://pubs.acs.org/doi/abs/10.1021/acs.inorgchem.8b02372"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={props.classes.link}
+            >
+            10.1021/acs.inorgchem.8b02372
+            </a>
+          </li>
+        </ul>
+      </Typography>
       <Typography variant="body2">
         BDE Matrix App
         <SeparatorDot className={props.classes.separator} />
