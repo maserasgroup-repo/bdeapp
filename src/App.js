@@ -746,7 +746,14 @@ function Footer(props) {
         Reference Articles:
         <ul>
           <li>
-            L. Morán-González, J. Rodríguez-Guerra Pedregal, M. Besora, F. Maseras, Eur. J. Inorg. Chem., provisionally accepted. DOI: 10.1002/ejic.202100932
+            L. Morán-González, J. Rodríguez-Guerra Pedregal, M. Besora, F. Maseras, Eur. J. Inorg. Chem., 2022, e202100932. DOI: 
+            <a
+              href="https://chemistry-europe.onlinelibrary.wiley.com/doi/abs/10.1002/ejic.202100932"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={props.classes.link}
+            >
+            10.1002/ejic.202100932
           </li>
           <li>
             O. Lakuntza, M. Besora, F. Maseras, Inorg. Chem., 2018, 57, 14660-14670. DOI:  
