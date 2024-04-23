@@ -4,15 +4,16 @@
   "homepage": "https://maserasgroup-repo.github.io/bdeapp",
   "private": true,
   "dependencies": {
-    "@material-ui/core": "^3.9.3",
-    "@material-ui/icons": "^3.0.2",
+    "@material-ui/core": "^4.12.4",
+    "@material-ui/icons": "^4.11.3",
     "algebra.js": "^0.2.6",
     "fg-loadcss": "^2.1.0",
     "mathjs": ">=7.5.1",
     "prettier": "^1.18.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-scripts": "2.0.4"
+    "react-scripts": "^5.0.1",
+    "classnames": "latest"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -31,6 +32,6 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "gh-pages": "^2.0.1"
+    "gh-pages": "latest"
   }
 }

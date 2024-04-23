@@ -752,7 +752,7 @@ function Footer(props) {
               target="_blank"
               rel="noopener noreferrer"
               className={props.classes.link}
-            >
+            />
             10.1002/ejic.202100932
           </li>
           <li>
